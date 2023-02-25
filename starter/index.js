@@ -2,15 +2,11 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const emailValidator = require('email-validator');
-const generateMarkdown = require("./utils/generateMarkdown");
+/// IMPORTING GENERATE MARKDEOWN FUNCTION
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
-// array of questions for user
-/* const questions = [
-    
-
-]; */
-
+/// PROMPT QUESTIONS
 inquirer
 .prompt([
     {
@@ -130,19 +126,18 @@ inquirer
 .then((userInput) => {
 
     console.log(userInput)
-    return userInput;
-     
+
+    const fileName = `${userInput.projectName}.md`
+    const fileGen = generateMarkdown(userInput)
+    writeToFile(fileName, fileGen);
+ 
 });
 
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName, fileGen) {
+
+    fs.writeFile(fileName, fileGen, (err) => 
+    err ? console.log(err): console.log("success!"));
 }
 
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();

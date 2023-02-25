@@ -1,8 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(userInput) {
-  return `
-  # ${userInput.projectName}
-
+  return `# ${userInput.projectName} 
   ## Project Description
   ${userInput.PrjDescription}
 
@@ -34,21 +32,17 @@ function generateMarkdown(userInput) {
   
   ### Contributors Links
   ![External Docs](${userInput.credits1})
+
   ![External Docs](${userInput.credits2})
   
   ### Questions
   How to connect with me: 
   * Email : ${userInput.email}
   * GitHub: ![GitHub Repo](${userInput.gitHubUrl})
-  
-  
+`
+;
 
-
-
-  
-
-
-`;
 }
 
+/// RENDERING THE GENERATE MARKDOWN FUNCTION AVAILABLE TO USE IN OTHER PART OF THE APPLICATION WHEN IMPORTED
 module.exports = generateMarkdown;
