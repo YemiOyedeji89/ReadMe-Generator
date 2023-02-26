@@ -7,11 +7,11 @@ function generateMarkdown(userInput) {
   ## Table of Contents
 
   * [Installation](#Installation)
-  * [screenShoots](#Usage)
+  * [Usage](#Usage)
   * [License](#License)
   * [Tests](#Tests)
-  * [contribute](#Contributors-Links)
-  * [contact](#Questions)
+  * [Contribute](#Contributors-Links)
+  * [Contact](#Questions)
   
   ## Installation
   Run below code to install project dependencies:
