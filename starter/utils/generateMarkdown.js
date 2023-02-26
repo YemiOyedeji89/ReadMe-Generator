@@ -15,7 +15,7 @@ function generateMarkdown(userInput) {
   
   ## Installation
   Run below code to install project dependencies:
-  ${(userInput.install).trim()}
+  *${(userInput.install).trim()}*
 
   ## Usage
   
