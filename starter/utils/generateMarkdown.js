@@ -1,8 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(userInput) {
-  return `# ${userInput.projectName} 
+  return `# ${(userInput.projectName).trim()} 
   ## Project Description
-  ${userInput.PrjDescription}
+  ${(userInput.PrjDescription).trim()}
 
   ## Table of Contents
 
@@ -15,7 +15,7 @@ function generateMarkdown(userInput) {
   
   ## Installation
   Run below code to install project dependencies:
-  ${userInput.install}
+  ${(userInput.install).trim()}
 
   ## Usage
   
@@ -24,21 +24,22 @@ function generateMarkdown(userInput) {
   ## License
   ${userInput.license}
 
-  ### Tests
+  ## Tests
   Step to test validations on the application:
-  * ${userInput.testCode1} 
-  * ${userInput.testCode2} 
-  * ${userInput.testCode3} 
+  * ${(userInput.testCode1).trim()} 
+  * ${(userInput.testCode2).trim()} 
+  * ${(userInput.testCode3).trim()} 
   
-  ### Contributors Links
-  ![External Docs](${userInput.credits1})
+  ## Contributors Links
+  ![${(userInput.credits1Name).trim()}](${(userInput.credits1).trim()})
 
-  ![External Docs](${userInput.credits2})
+
+  ![${(userInput.credits2Name).trim()}](${(userInput.credits2).trim()})
   
   ### Questions
   How to connect with me: 
-  * Email : ${userInput.email}
-  * GitHub: ![GitHub Repo](${userInput.gitHubUrl})
+  * Email : ${(userInput.email).trim()}
+  * GitHub: ![GitHub page](${(userInput.gitHubUrl).trim()})
 `
 ;
 
