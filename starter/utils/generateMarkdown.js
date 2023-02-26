@@ -25,7 +25,7 @@ function generateMarkdown(userInput) {
   ${userInput.license}
 
   ## Tests
-  Step to test validations on the application:
+  Validation test scenarios:
   * ${(userInput.testCode1).trim()} 
   * ${(userInput.testCode2).trim()} 
   * ${(userInput.testCode3).trim()} 

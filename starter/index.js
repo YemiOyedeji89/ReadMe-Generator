@@ -79,16 +79,19 @@ inquirer
         type: 'input',
         name: 'testCode1',
         message: 'Application validation test scenario 1',
+        default: 'None'
     },
     {   ///VALIDATION TEST SCENARIO 2
         type: 'input',
         name: 'testCode2',
         message: 'Application validation test scenario 2',
+        default: 'None'
     },
     {   ///VALIDATION TEST SCENARIO 3
         type: 'input',
         name: 'testCode3',
         message: 'Application validation test scenario 3',
+        default: 'None'
     },
     {   ///COLLABORATOR NAME
         type: 'input',
