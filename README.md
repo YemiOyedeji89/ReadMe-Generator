@@ -14,6 +14,7 @@ Some of the input validations in place are:
 
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Demo](#Demo)
 * [License](#License)
 * [Tests](#Tests)
 * [Packages](#Packages)
@@ -67,13 +68,17 @@ Answer the prompted questions to generated an md file sample below.
 
 
 
+## Demo
+**Demo Video QR link below**
+
+
 ![DemoVideo QRCode](./images/qr-code.png)
 
 
 
 
 
-**Demo Video Link below**
+**Demo Video link below**
 
 ![Demo Video](https://drive.google.com/file/d/1TQR-jCVvjy-e1kFPstVw2dKFb-Quj366/view)
 
