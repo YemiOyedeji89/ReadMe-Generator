@@ -6,19 +6,6 @@ const emailValidator = require('email-validator');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const validator = require('validator');
 
-///FUNCTION TO VALIDATE URL INPUT
-function validateUrl(input){
-   
-    const validUrl = validator.isURL(input, {
-        protocols: ['http', 'https'],
-        require_protocol: true
-    });
-
-    if(!validUrl){
-       isValid = false
-    }
-    return isValid;       
-};
 
 /// PROMPT QUESTIONS
 inquirer
@@ -117,8 +104,8 @@ inquirer
 
             let isValid;
 
-            if(input !== ""){
-             isValid = validateUrl(input);
+            if(input !== 'None'){
+             isValid = validateUrl(input, isValid);
             }
   
             if (isValid === false){
@@ -127,7 +114,7 @@ inquirer
               return true
             } 
         },
-        default: ''
+        default: 'None'
     },
     {   ///EXTERNAL SOURCE NAME
         type: 'input',
@@ -144,7 +131,7 @@ inquirer
             let isValid;
 
             if(input !== ""){
-                isValid = validateUrl(input);
+                isValid = validateUrl(input, isValid);
             }
   
             if (isValid === false){
@@ -164,7 +151,7 @@ inquirer
          let isValid;
              
             if(input !== "None"){
-              isValid = validateUrl(input);
+              isValid = validateUrl(input, isValid);
             }
 
             if (isValid === false){
@@ -201,6 +188,19 @@ inquirer
 
 });
 
+///FUNCTION TO VALIDATE URL INPUT
+function validateUrl(input, isValid){
+   
+    const validUrl = validator.isURL(input, {
+        protocols: ['http', 'https'],
+        require_protocol: true
+    });
+
+    if(!validUrl){
+       isValid = false
+    }
+    return isValid;       
+};
 
 
 // FUNCTION TO WRITE README FILE
