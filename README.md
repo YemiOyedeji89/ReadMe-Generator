@@ -80,7 +80,7 @@ Answer the prompted questions to generated an md file sample below.
 
 **Demo Video link below**
 
-![Demo Video](https://drive.google.com/file/d/1TQR-jCVvjy-e1kFPstVw2dKFb-Quj366/view)
+![Demo Video](./demo%20Video/ReadmeGenerator_Yemi%20Oyedeji.webm)
 
 
 ## Tests
@@ -97,7 +97,7 @@ Validation test scenarios on user input:
 
 
 ## Contributors Links
-![nodejs](https://nodejs.org/api/path.html)
+![nodejs](https://nodejs.org/en/)
 
 [W3schools](https://www.w3schools.com/js/default.asp)
 
