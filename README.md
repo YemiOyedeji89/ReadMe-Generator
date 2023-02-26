@@ -8,6 +8,8 @@ Some of the input validations in place are:
 - User *must* input a valid email in the correct format (test@test.com).
 - When prompt for web URLs, the input type must include the protocol value (*http* or *https*).
 
+
+
 ## Table of Contents
 
 * [Installation](#Installation)
@@ -18,35 +20,50 @@ Some of the input validations in place are:
 * [Contribute](#Contributors-Links)
 
 
+
+
 ## Installation
 **How to run project on local machine**
 * Install Visual Studio Code
+* Download *node.js*
 * Navigate to main page of the git Repository
 * Click on the 'Code'
 * Copy the SSH line to run on the Terminal or  the HTTPS link
 * Clone the repository - 
+*  Run below code to install project dependencies:
+    *npm i*
+
+
+
+
 
 ![Git clone](./images/Screenshot_20230109_134921.png)
 
 
-- Download *node.js*
 
-- Run below code to install project dependencies:
-*npm i*
+
+
+
+
+
+
+
+
+
 
 
 ## Usage
-Answer the prompted questions to generated an md file 
+Answer the prompted questions to generated an md file sample below.
 
 
 ![Questions](./images/console-Question.jpg)
 
 
 
+
 ![Questions](./images/Git_generatedReadme.jpg)
 
 
-![Demo Video](https://drive.google.com/file/d/1TQR-jCVvjy-e1kFPstVw2dKFb-Quj366/view)
 
 
 
@@ -55,7 +72,10 @@ Answer the prompted questions to generated an md file
 
 
 
-## License
+
+**Demo Video Link below**
+
+![Demo Video](https://drive.google.com/file/d/1TQR-jCVvjy-e1kFPstVw2dKFb-Quj366/view)
 
 
 ## Tests
