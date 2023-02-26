@@ -91,9 +91,9 @@ Validation test scenarios on user input:
 * A project description must be entered else, output error message. 
 
 ## Packages
-*inquirer 6.3.1*
-*validator 13.9.0*
-*email-validator 2.0.4*
+- *inquirer 6.3.1*
+- *validator 13.9.0*
+- *email-validator 2.0.4*
 
 
 ## Contributors Links
